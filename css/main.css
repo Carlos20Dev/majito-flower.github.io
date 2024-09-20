@@ -37,6 +37,29 @@ body {
   rgb(240, 240, 240));
 }
 
+.photo {
+  text-align: center;
+}
+.photo img {
+  width: 100px; 
+  justify-content: center; 
+  margin-top: 20px;
+  -webkit-animation: moving-flower-1 4s linear infinite;
+          animation: moving-flower-1 4s linear infinite;
+
+  -webkit-animation: aparecer 10s linear;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% { opacity: 1;}
+}
+
 .flowers {
   position: relative;
   transform: scale(0.9);
